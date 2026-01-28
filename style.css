@@ -1,0 +1,172 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+      font-family: "Caudex", serif;
+      font-weight: 400;
+      font-style: normal;
+      font-family: "Caudex", serif;
+      font-weight: 700;
+      font-style: normal;
+
+      font-family: "Caudex", serif;
+      font-weight: 400;
+      font-style: italic;
+
+
+
+      font-family: "Caudex", serif;
+      font-weight: 700;
+      font-style: italic;
+}
+
+
+
+body {
+      background-color: lightgrey;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+
+}
+
+#container {
+      width: 90vw;
+      height: 90vh;
+      border-radius: 08px;
+      background-color: rgb(255, 248, 248);
+      display: flex;
+      flex-direction: row;
+      padding: 30px;
+
+}
+
+#left-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+}
+
+#right-container {
+      flex: 1;
+      background-image: url(../projeto/assets/fundohomepageteste.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 20px;
+      display: none;
+
+
+}
+
+#subtitle-login {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+}
+
+#title-hed {
+      font-size: 20px;
+      visibility: hidden;
+}
+
+#header-container {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      color: #393f46;
+}
+
+#subtitle-page {
+      margin-bottom: 4rem;
+}
+
+#welcome-text {
+      margin-bottom: 1rem;
+}
+
+.input-container {
+      display: flex;
+      flex-direction: column;
+}
+
+main {
+      min-width: 40%;
+}
+.btn-enter {
+      display: inline-flex;
+      /*define o botão como um flexbox inline*/
+      justify-content: center;
+      /*alinha o conteúdo horizontalmente*/
+      align-items: center;
+      /*alinha o conteúdo verticalmente*/
+      width: 100%;
+      /*largura do botão*/
+      height: 4rem;
+      /*altura do botão*/
+      border-radius: 8px;
+      /*borda arredondada*/
+      background-color: rgb(221, 87, 248);
+      /*cor de fundo do botão*/
+      color: white;
+      /*cor do texto do botão*/
+      font-weight: 600;
+      /*negrito no texto do botão, não tem px pois o valor é pré-definido*/
+      text-decoration: none;
+      /*remove o sublinhado do link*/
+      margin-top: 2rem;
+      /*espaçamento superior do botão*/
+      border: solid 1px gray;
+      /*borda cinza*/
+}
+
+.btn-cadastrar {
+      display: inline-flex;
+      /*define o botão como um flexbox inline*/
+      justify-content: center;
+      /*alinha o conteúdo horizontalmente*/
+      align-items: center;
+      /*alinha o conteúdo verticalmente*/
+      width: 100%;
+      /*largura do botão*/
+
+      height: 4rem;
+      /*altura do botão*/
+      border-radius: 8px;
+      /*borda arredondada*/
+      background-color: rgb(221, 87, 248);
+      /*cor de fundo do botão*/
+      color: white;
+      /*cor do texto do botão*/
+      font-weight: 600;
+      /*negrito no texto do botão, não tem px pois o valor é pré-definido*/
+      text-decoration: none;
+      /*remove o sublinhado do link*/
+      margin-top: 2rem;
+      /*espaçamento superior do botão*/
+      border: solid 1px gray;
+      /*borda cinza*/
+}
+
+#footer {
+      color: rgb(150, 149, 149);
+      font-weight: 700
+}
+
+@media(min-width:600px) {
+      #right-container {
+            flex: 1;
+            background-image: url(../projeto/assets/fundohomepageteste.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 20px;
+            display: block;
+
+      }
+
+}

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playcerto</title>
+    <link
+      rel="shortcut icon"
+      href="../../assets/logoplaycerto.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <!-- posso usar varias div/section para separar em quadros -->
+      <div id="left-container">
+        <header id="header-container">
+          <img
+            src="../../assets/logoplaycerto.png"
+            alt="logo"
+            width="85"
+            height="85"
+          />
+          <h1 id="title-hed">Play Certo</h1>
+        </header>
+        <main>
+          <div id="subtitle-page">
+            <h2 id="welcome-text">
+              Olá, <br />
+              Bem vindo de volta!
+            </h2>
+            <p>Hey, bem vindo de volta para o seu lugar especial</p>
+          </div>
+
+          <form onsubmit="alert('enviado!')">
+            <div class="input-container">
+              <label>E-mail:</label>
+              <input
+                class="input-text"
+                type="email"
+                placeholder="Digite seu e-mail"
+              />
+            </div>
+            <div class="input-container">
+              <label>Senha:</label>
+              <input
+                class="input-text"
+                type="password"
+                placeholder="Digite sua senha"
+              />
+            </div>
+
+            <div id="subtitle-login">
+              <div id="checbox-container">
+                <input type="checkbox" />
+                <label id="remeber-label">Lembre-me</label>
+              </div>
+              <a
+                id="forgot-password"
+                href="../../pages/esqueceuasenha/index.html"
+                >Esqueceu a senha?</a
+              >
+            </div>
+            <button id="btn-singin" type="submit">Entrar</button>
+          </form>
+        </main>
+        <footer id="footer">
+          <p>
+            Não possuí uma conta?
+            <a id="singup" href="https://www.google.com/?hl=pt_BR"
+              >Criar conta</a
+            >
+          </p>
+        </footer>
+      </div>
+      <div id="right-container"></div>
+    </div>
+  </body>
+</html>
