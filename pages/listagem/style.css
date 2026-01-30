@@ -1,0 +1,231 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+}
+
+body {
+      background: #fff6f6;
+}
+
+/* HEADER */
+.header {
+      background: #e1a6d6;
+      padding: 04px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      z-index: 1000;
+      width: 100%;
+}
+
+.logo {
+      color: #3f363b;
+      font-size: 22px;
+}
+
+.menu {
+      background: none;
+      border: none;
+      font-size: 22px;
+      display: block;
+}
+
+/* MAIN */
+.listagem {
+      padding: 16px;
+      display: grid;
+      gap: 24px;
+}
+
+/* CARD */
+.card {
+      background: #ffffff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* IMAGEM DO CARD */
+.card-image {
+      height: 220px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 120px;
+}
+
+/* Gradientes rosados */
+.spotify {
+      background-image:
+            url("../../assets/spotify-logo-spotify-symbol-3.png"),
+            linear-gradient(180deg, #e1a6d6, #f4d8ee);
+}
+
+.youtube {
+      background-image:
+            url("../../assets/Youtube_Music_icon.svg.png"),
+            linear-gradient(180deg, #d28ac8, #f2cfe8);
+}
+
+.apple {
+      background-image:
+            url("../../assets/Apple_Music_icon.svg.png"),
+            linear-gradient(180deg, #c97fc2, #efc3e6);
+}
+
+/* CONTEÚDO */
+.card-content {
+      padding: 16px;
+}
+
+.card-content h2 {
+      color: #5a0f52;
+      margin-bottom: 8px;
+}
+
+.card-content p {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 16px;
+}
+
+/* RODAPÉ DO CARD */
+.card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.card-footer strong {
+      color: #b23aa5;
+      font-size: 16px;
+}
+
+.card-footer button {
+      background: #d65cff;
+      color: #ffffff;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 20px;
+      cursor: pointer;
+}
+
+.card-footer button:hover {
+      background: #b23aa5;
+}
+
+/* FOOTER */
+.footer {
+      background: #2b0a3d;
+      padding: 24px 16px;
+      color: #ffffff;
+      display: grid;
+      gap: 24px;
+}
+
+.footer h3 {
+      color: #e1a6d6;
+      margin-bottom: 8px;
+}
+
+.footer a {
+      display: block;
+      color: #d8c4d6;
+      text-decoration: none;
+      font-size: 14px;
+      margin-bottom: 6px;
+}
+
+.recomendado {
+      border: 2px solid #d65cff;
+      position: relative;
+}
+
+.badge {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: #d65cff;
+      color: #ffffff;
+      padding: 6px 14px;
+      font-size: 12px;
+      border-radius: 20px;
+      font-weight: bold;
+}
+
+/* BOTÃO COMO LINK */
+.btn-assinar {
+      background: #d65cff;
+      color: #ffffff;
+      padding: 8px 18px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      display: inline-block;
+      transition: background 0.2s;
+}
+
+.btn-assinar:hover {
+      background: #b23aa5;
+}
+a{    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+.nav-class {
+      font-family: 'Poppins', sans-serif;
+      font-size: 20px;
+      text-align: center;
+      display: flex;
+      gap: 12px;
+
+}
+
+#link1 {
+      background-color: rgb(245, 226, 239);
+      color: #333;
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px;
+      text-decoration: none;
+      display: none;
+     
+}
+
+#link2 {
+      background-color: rgb(245, 226, 239);
+      color: #333;
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px;
+      text-decoration: none;
+      /*remove o sublinhado*/
+      display: none;
+      flex: 1;
+
+}
+
+
+
+@media(min-width:600px) {
+      .menu {
+
+            display: none;
+            /*bloqueia a imagem para aparecer dentro do limite de 600px*/
+
+      }
+      #link1{
+      display: block;
+}
+#link2{
+      display: block;
+}
+
+}
+

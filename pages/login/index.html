@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Playcerto</title>
+
+    <!-- Favicon: caminho corrigido -->
     <link
       rel="shortcut icon"
       href="../../assets/logoplaycerto.png"
@@ -19,7 +21,6 @@
   </head>
   <body>
     <div id="container">
-      <!-- posso usar varias div/section para separar em quadros -->
       <div id="left-container">
         <header id="header-container">
           <img
@@ -30,16 +31,17 @@
           />
           <h1 id="title-hed">Play Certo</h1>
         </header>
+
         <main>
           <div id="subtitle-page">
             <h2 id="welcome-text">
               Olá, <br />
-              Bem vindo de volta!
+              Bem-vindo de volta!
             </h2>
-            <p>Hey, bem vindo de volta para o seu lugar especial</p>
+            <p>Hey, bem-vindo de volta para o seu lugar especial</p>
           </div>
 
-          <form onsubmit="alert('enviado!')">
+          <form onsubmit="alert('enviado!'); return false;">
             <div class="input-container">
               <label>E-mail:</label>
               <input
@@ -64,22 +66,24 @@
               </div>
               <a
                 id="forgot-password"
-                href="../../pages/esqueceuasenha/index.html"
+                href="../esqueceuasenha/index.html"
                 >Esqueceu a senha?</a
               >
             </div>
             <button id="btn-singin" type="submit">Entrar</button>
           </form>
         </main>
+
         <footer id="footer">
           <p>
-            Não possuí uma conta?
+            Não possui uma conta?
             <a id="singup" href="https://www.google.com/?hl=pt_BR"
               >Criar conta</a
             >
           </p>
         </footer>
       </div>
+
       <div id="right-container"></div>
     </div>
   </body>
