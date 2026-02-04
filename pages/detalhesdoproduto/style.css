@@ -177,8 +177,9 @@ main {
 #product-details {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1;
   max-width: 420px;
+  align-items: center;
 }
 
 .product-description {
