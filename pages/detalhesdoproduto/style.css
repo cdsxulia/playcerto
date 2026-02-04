@@ -1,0 +1,213 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+      font-family: "Caudex", serif;
+      font-weight: 400;
+      font-style: normal;
+      font-family: "Caudex", serif;
+      font-weight: 700;
+      font-style: normal;
+
+      font-family: "Caudex", serif;
+      font-weight: 400;
+      font-style: italic;
+
+
+
+      font-family: "Caudex", serif;
+      font-weight: 700;
+      font-style: italic;
+}
+
+
+
+body {
+      background-image: url(../../assets/fundobody.png);
+      background-color: lightgrey;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+
+}
+
+#container {
+      width: 90vw;
+      height: 90vh;
+      border-radius: 08px;
+      background-color: rgb(255, 248, 248);
+      display: flex;
+      flex-direction: row;
+      padding: 30px;
+
+}
+
+#left-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+}
+
+#right-container {
+      height: 100%;
+      /*100% ocupa todo o box, é dispensavél, pode ser usado somente o flex 1, usar caso queira manipular o tamanho do quadro*/
+      flex: 1;
+      /*ocupa todo espaço disponível*/
+      background-image: url(../../assets/fundospotify.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      /*todo esse conjuto para colocar imagem*/
+      border-radius: 20px;
+      display: none;
+
+}
+
+#subtitle-login {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+}
+
+#title-hed {
+      font-size: 20px;
+      visibility: hidden;
+}
+
+#header-container {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      color: #393f46;
+}
+
+#subtitle-page {
+      margin-bottom: 4rem;
+}
+
+#welcome-text {
+      margin-bottom: 1rem;
+}
+
+.input-container {
+      display: flex;
+      flex-direction: column;
+}
+
+main {
+      min-width: 40%;
+}
+
+#checbox-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+}
+
+.input-text {
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      height: 2rem;
+      border-radius: 8px;
+      border: solid 1px #ccc;
+      padding-left: 8px;
+}
+
+#forgot-password {
+      color: rgb(150, 149, 149);
+      cursor: pointer;
+      text-decoration: none;
+}
+
+#remeber-label {
+      color: rgb(150, 149, 149);
+}
+
+#btn-singin {
+      margin-top: 4rem;
+      border-radius: 8px;
+      width: 96px;
+      height: 48px;
+      border: solid 1px #ccc;
+      font-weight: 700;
+      background-color: rgb(149, 60, 193);
+      color: white;
+      text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer {
+      color: rgb(150, 149, 149);
+      font-weight: 700
+}
+
+#singup {
+      color: rgb(201, 18, 252);
+      cursor: pointer;
+      text-decoration: none;
+}
+
+@media(min-width:600px) {
+      #right-container {
+            height: 100%;
+
+            flex: 1;
+
+            background-image: url(../../assets/fundospotify.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            border-radius: 20px;
+            display: block;
+
+      }
+
+}
+/* mantém tudo que vocês já têm */
+
+#product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 420px;
+}
+
+.product-description {
+  color: #555;
+}
+
+.product-benefits {
+  list-style: none;
+  padding-left: 0;
+}
+
+.product-benefits li {
+  margin-bottom: 0.4rem;
+  color: #393f46;
+  font-weight: 700;
+}
+
+.product-price {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.product-price span {
+  color: rgb(150, 149, 149);
+}
+
+.product-price strong {
+  font-size: 1.2rem;
+  color: rgb(149, 60, 193);
+}

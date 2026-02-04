@@ -2,7 +2,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
+      font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -12,114 +12,125 @@ body {
 /* HEADER */
 .header {
       background: #e1a6d6;
-      padding: 04px;
+      padding: 12px 16px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
       position: fixed;
-      z-index: 1000;
       width: 100%;
+      top: 0;
+      z-index: 1000;
+}
+
+.header-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
 }
 
 .logo {
+      font-size: 22px;
       color: #3f363b;
-      font-size: 22px;
-}
-
-.menu {
-      background: none;
-      border: none;
-      font-size: 22px;
-      display: block;
 }
 
 /* MAIN */
-.listagem {
-      padding: 16px;
+.produtos {
+      padding: 100px 16px 32px;
       display: grid;
+      grid-template-columns: 1fr;
       gap: 24px;
+      max-width: 1200px;
+      margin: auto;
 }
 
 /* CARD */
 .card {
       background: #ffffff;
-      border-radius: 20px;
+      border-radius: 10px;
       overflow: hidden;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      display: flex;
+      flex-direction: column;
 }
 
-/* IMAGEM DO CARD */
-.card-image {
-      height: 220px;
+/* IMAGEM TOPO */
+.card-img {
+      height: 180px;
       background-position: center;
       background-repeat: no-repeat;
       background-size: 120px;
 }
 
-/* Gradientes rosados */
-.spotify {
-      background-image:
-            url("../../assets/spotify-logo-spotify-symbol-3.png"),
-            linear-gradient(180deg, #e1a6d6, #f4d8ee);
-}
-
+/* GRADIENTES + LOGOS */
 .youtube {
       background-image:
-            url("../../assets/Youtube_Music_icon.svg.png"),
-            linear-gradient(180deg, #d28ac8, #f2cfe8);
+            url("../../assets/Youtube_Music_icon.svg.png");
+   
+
+
+}
+
+.spotify {
+      background-image:
+            url("../../assets/spotify-logo-spotify-symbol-3.png");
+      
+
 }
 
 .apple {
       background-image:
-            url("../../assets/Apple_Music_icon.svg.png"),
-            linear-gradient(180deg, #c97fc2, #efc3e6);
+            url("../../assets/Apple_Music_icon.svg.png");
+      
+}
+.card-img{
+     height: 300px 
 }
 
 /* CONTEÚDO */
-.card-content {
+.card-body {
       padding: 16px;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
 }
 
-.card-content h2 {
+.card-body h2 {
+      font-size: 18px;
       color: #5a0f52;
       margin-bottom: 8px;
 }
 
-.card-content p {
+.card-body p {
       font-size: 14px;
       color: #333;
       margin-bottom: 16px;
 }
 
-/* RODAPÉ DO CARD */
-.card-footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-}
-
-.card-footer strong {
+.card-body strong {
       color: #b23aa5;
-      font-size: 16px;
+      margin-bottom: 16px;
 }
 
-.card-footer button {
+/* BOTÃO */
+.btn {
+      margin-top: auto;
       background: #d65cff;
       color: #ffffff;
-      border: none;
-      padding: 8px 18px;
-      border-radius: 20px;
-      cursor: pointer;
+      padding: 10px;
+      text-align: center;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.2s;
 }
 
-.card-footer button:hover {
+.btn:hover {
       background: #b23aa5;
 }
 
 /* FOOTER */
 .footer {
       background: #2b0a3d;
-      padding: 24px 16px;
+      padding: 32px 16px;
       color: #ffffff;
       display: grid;
       gap: 24px;
@@ -138,94 +149,72 @@ body {
       margin-bottom: 6px;
 }
 
-.recomendado {
-      border: 2px solid #d65cff;
-      position: relative;
+/* HEADER */
+.header {
+      background: #e1a6d6;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
 }
 
-.badge {
-      position: absolute;
-      top: 14px;
-      left: 14px;
-      background: #d65cff;
-      color: #ffffff;
-      padding: 6px 14px;
-      font-size: 12px;
-      border-radius: 20px;
-      font-weight: bold;
+/* BOTÃO MENU */
+.menu {
+      background: none;
+      border: none;
+      font-size: 26px;
+      cursor: pointer;
+      color: #3f363b;
 }
 
-/* BOTÃO COMO LINK */
-.btn-assinar {
-      background: #d65cff;
-      color: #ffffff;
-      padding: 8px 18px;
-      border-radius: 20px;
+/* CONTAINER DOS BOTÕES */
+.user-actions {
+
+      padding: 10px;
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end;
+}
+
+/* ESTILO BASE DOS BOTÕES */
+.user-actions a {
+      background: #ffffff;
+      color: #000;
       text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 12px;
+      /* efeito pill */
       font-size: 14px;
       font-weight: 500;
-      display: inline-block;
-      transition: background 0.2s;
+      transition: 0.3s ease;
 }
 
-.btn-assinar:hover {
-      background: #b23aa5;
-}
-a{    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-    
-.nav-class {
-      font-family: 'Poppins', sans-serif;
-      font-size: 20px;
-      text-align: center;
-      display: flex;
-      gap: 12px;
-
+/* HOVER */
+.user-actions a:hover {
+      background: #f5f5f5;
+      transform: scale(1.05);
 }
 
-#link1 {
-      background-color: rgb(245, 226, 239);
-      color: #333;
-      width: 100%;
-      padding: 10px;
-      border-radius: 6px;
-      border: 1px;
-      text-decoration: none;
-      display: none;
-     
-}
-
-#link2 {
-      background-color: rgb(245, 226, 239);
-      color: #333;
-      width: 100%;
-      padding: 10px;
-      border-radius: 6px;
-      border: 1px;
-      text-decoration: none;
-      /*remove o sublinhado*/
-      display: none;
-      flex: 1;
-
+/* BOTÃO SAIR (opcional destaque) */
+.btn-exit {
+      color: #c0392b;
 }
 
 
 
-@media(min-width:600px) {
-      .menu {
-
-            display: none;
-            /*bloqueia a imagem para aparecer dentro do limite de 600px*/
-
+/* RESPONSIVO */
+@media (min-width: 600px) {
+      .produtos {
+            grid-template-columns: repeat(2, 1fr);
       }
-      #link1{
-      display: block;
-}
-#link2{
-      display: block;
 }
 
+@media (min-width: 992px) {
+      .produtos {
+            grid-template-columns: repeat(4, 1fr);
+      }
 }
-

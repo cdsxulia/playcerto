@@ -1,134 +1,95 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Play Certo</title>
-    <link
-      rel="shortcut icon"
-      href="../../assets/logoplaycerto.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- HEADER -->
-    <header class="header">
-      <img
-        src="../../assets/logoplaycerto.png"
-        alt="logo"
-        width="50"
-        height="50"
-      />
-      <h1 class="logo">Play Certo</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play Certo</title>
 
-      <button class="menu">☰</button>
-      <div id="dropdown">
-        <nav class="nav-class">
-      <a id="link1" href="https://www.google.com/?hl=pt_BR" target="_blank">Meu perfil</a>
-      <a id="link2" href="../../index.html" target="_blank">Sair</a>
-   </nav>
-      </div>
-    </header>
+  <link rel="shortcut icon" href="../../assets/logoplaycerto.png" type="image/x-icon">
 
-    <!-- MAIN -->
-    <main class="listagem">
-      <!-- CARD -->
-      <article class="card">
-        <div class="card-image spotify"></div>
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-        <div class="card-content">
-          <h2>Spotify Premium</h2>
-          <p>
-            Música sem anúncios, downloads para ouvir offline e playlists
-            personalizadas para você.
-          </p>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
 
-          <div class="card-footer">
-            <strong>R$ 21,90/mês</strong>
-            <a href="https://www.spotify.com/br-pt/premium/" class="btn-assinar"
-              >Assinar</a
-            >
-          </div>
-        </div>
-      </article>
+<body>
 
-      <!-- CARD -->
-      <article class="card">
-        <div class="card-image youtube"></div>
+<!-- HEADER -->
+<header class="header">
+  <div class="header-left">
+    <img src="../../assets/logoplaycerto.png" alt="Logo" width="45">
+    <h1 class="logo">Play Certo</h1>
+  </div>
 
-        <div class="card-content">
-          <h2>YouTube Music</h2>
-          <p>
-            Catálogo gigante com músicas, clipes, remixes e versões ao vivo.
-          </p>
+<div class="user-actions">
+  <a href="#" class="btn-profile">Meu perfil</a>
+  <a href="../../index.html" class="btn-exit">Sair</a>
+</div>
 
-          <div class="card-footer">
-            <strong>R$ 20,90/mês</strong>
-            <a
-              href="https://music.youtube.com/music_premium"
-              class="btn-assinar"
-              >Assinar</a
-            >
-          </div>
-        </div>
-      </article>
 
-      <!-- CARD -->
-      <article class="card">
-        <div class="card-image apple"></div>
+</header>
 
-        <div class="card-content">
-          <h2>Apple Music</h2>
-          <p>
-            Qualidade de áudio superior e integração perfeita com dispositivos
-            Apple.
-          </p>
+<!-- MAIN -->
+<main class="produtos">
 
-          <div class="card-footer">
-            <strong>R$ 21,90/mês</strong>
-            <a href="https://www.apple.com/br/apple-music/" class="btn-assinar"
-              >Assinar</a
-            >
-          </div>
-        </div>
-      </article>
-      <article class="card recomendado">
-        <div class="badge">Recomendado</div>
+  <!-- CARD -->
+  <article class="card">
+    <div class="card-img youtube"></div>
 
-        <div class="card-image spotify"></div>
+    <div class="card-body">
+      <h2>YouTube Music</h2>
+      <p>Música sem anúncios, downloads offline e playlists personalizadas.</p>
+      <strong>R$ 20,90 / mês</strong>
+      <a href="../detalhesdoproduto/index.html" class="btn">Assinar</a>
+    </div>
+  </article>
 
-        <div class="card-content">
-          <h2>Spotify Premium</h2>
-          <p>
-            Música sem anúncios, downloads offline e playlists feitas para você.
-          </p>
+  <!-- CARD -->
+  <article class="card">
+    <div class="card-img spotify"></div>
 
-          <div class="card-footer">
-            <strong>R$ 21,90/mês</strong>
-            <a href="https://www.spotify.com/br-pt/premium/" class="btn-assinar"
-              >Assinar</a
-            >
-          </div>
-        </div>
-      </article>
-    </main>
+    <div class="card-body">
+      <h2>Spotify Premium</h2>
+      <p>Catálogo gigante com músicas, clipes, remixes e versões ao vivo.</p>
+      <strong>R$ 23,90 / mês</strong>
+      <a href="../detalhesdoproduto/index.html" class="btn">Assinar</a>
+    </div>
+  </article>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div>
-        <h3>Institucional</h3>
-        <a href="#">Sobre Nós</a>
-        <a href="#">Missão</a>
-        <a href="#">Valores</a>
-      </div>
+  <!-- CARD -->
+  <article class="card">
+    <div class="card-img apple"></div>
 
-      <div>
-        <h3>Atendimento</h3>
-        <a href="#">FAQ</a>
-        <a href="#">Planos</a>
-        <a href="#">Contato</a>
-      </div>
-    </footer>
-  </body>
+    <div class="card-body">
+      <h2>Apple Music</h2>
+      <p>Qualidade de áudio superior e integração perfeita com dispositivos Apple.</p>
+      <strong>R$ 21,90 / mês</strong>
+      <a href="../detalhesdoproduto/index.html" class="btn">Assinar</a>
+    </div>
+  </article>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div>
+    <h3>Institucional</h3>
+    <a href="#">Sobre nós</a>
+    <a href="#">Missão</a>
+    <a href="#">Valores</a>
+  </div>
+
+  <div>
+    <h3>Atendimento</h3>
+    <a href="#">FAQ</a>
+    <a href="#">Contato</a>
+    <a href="#">Planos</a>
+  </div>
+</footer>
+
+</body>
 </html>

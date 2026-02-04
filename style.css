@@ -24,6 +24,7 @@
 
 
 body {
+      background-image: url(../projeto/assets/fundobody.png);
       background-color: lightgrey;
       display: flex;
       justify-content: center;
@@ -53,7 +54,7 @@ body {
 
 #right-container {
       flex: 1;
-      background-image: url(../projeto/assets/fundohomepageteste.png);
+      background-image: url(../projeto/assets/fundohomepage2.png);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -160,7 +161,7 @@ main {
 @media(min-width:600px) {
       #right-container {
             flex: 1;
-            background-image: url(../projeto/assets/fundohomepageteste.png);
+            background-image: url(../projeto/assets/fundohomepage2.png);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;

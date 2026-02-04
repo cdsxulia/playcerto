@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra | PlayCerto</title>
+    <link
+      rel="shortcut icon"
+      href="../../assets/logoplaycerto.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <h1>PlayCerto</h1>
+</header>
+
+<main class="checkout-container">
+
+    <!-- Resumo do plano -->
+    <section class="plan-card">
+        <div class="plan-header">
+            <img src="../../assets/spotify-logo-spotify-symbol-3.png" alt="Spotify">
+            <span class="badge">Recomendado</span>
+        </div>
+
+        <h2>Spotify Premium</h2>
+        <p class="plan-type">Plano Individual</p>
+
+        <ul class="plan-benefits">
+            <li>✔️ Música sem anúncios</li>
+            <li>✔️ Download offline</li>
+            <li>✔️ Alta qualidade de áudio</li>
+        </ul>
+
+        <div class="price">
+            <strong>R$ 23,90</strong>
+            <span>/ mês</span>
+        </div>
+    </section>
+
+    <!-- Formulário -->
+    <section class="form-card">
+        <h3>Dados para pagamento</h3>
+
+        <form>
+            <div class="input-group">
+                <label>Nome completo</label>
+                <input type="text" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="input-group">
+                <label>E-mail</label>
+                <input type="email" placeholder="seu@email.com" required>
+            </div>
+
+            <div class="input-group">
+                <label>CPF</label>
+                <input type="text" placeholder="000.000.000-00" required>
+            </div>
+
+            <div class="input-group">
+                <label>Forma de pagamento</label>
+                <select required>
+                    <option value="">Selecione</option>
+                    <option>Cartão de crédito</option>
+                    <option>Pix</option>
+                    <option>Boleto</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-submit">
+                Finalizar compra
+            </button>
+
+            <p class="secure-text">
+                🔒 Pagamento 100% seguro • Cancele quando quiser
+            </p>
+        </form>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 PlayCerto • Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>

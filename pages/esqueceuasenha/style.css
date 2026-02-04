@@ -24,6 +24,7 @@
 
 
 body {
+      background-image: url(../../assets/fundobody.png);
       background-color: lightgrey;
       display: flex;
       justify-content: center;
@@ -56,7 +57,7 @@ body {
       /*100% ocupa todo o box, é dispensavél, pode ser usado somente o flex 1, usar caso queira manipular o tamanho do quadro*/
       flex: 1;
       /*ocupa todo espaço disponível*/
-      background-image: url(../../assets/fundoplaycerto2.jpg);
+      background-image: url(../../assets/fundoplaycerto.jpg);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -153,7 +154,7 @@ main {
       #right-container {
             height: 100%;
             flex: 1;
-            background-image: url(../../assets/fundoplaycerto2.jpg);
+            background-image: url(../../assets/fundoplaycerto.jpg);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;

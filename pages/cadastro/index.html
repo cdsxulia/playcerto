@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playcerto | Cadastro</title>
+
+    <link
+      rel="shortcut icon"
+      href="../../assets/logoplaycerto.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="container" class="centered">
+      <div id="left-container" class="centered-box">
+        <header id="header-container">
+          <img
+            src="../../assets/logoplaycerto.png"
+            alt="logo"
+            width="85"
+            height="85"
+          />
+          <h1 id="title-hed">Play Certo</h1>
+        </header>
+
+        <main>
+          <div id="subtitle-page">
+            <h2 id="welcome-text">Crie sua conta</h2>
+            <p>Preencha os dados para começar</p>
+          </div>
+
+          <form onsubmit="alert('Cadastro realizado!'); return false;">
+            <div class="input-container">
+              <label>Nome completo:</label>
+              <input class="input-text" type="text" placeholder="Seu nome" required />
+            </div>
+
+            <div class="input-container">
+              <label>CPF:</label>
+              <input class="input-text" type="text" placeholder="000.000.000-00" required />
+            </div>
+
+            <div class="input-container">
+              <label>E-mail:</label>
+              <input class="input-text" type="email" placeholder="Seu e-mail" required />
+            </div>
+
+            <div class="input-container">
+              <label>Sexo:</label>
+              <select class="input-text" required>
+                <option value="">Selecione</option>
+                <option>Feminino</option>
+                <option>Masculino</option>
+                <option>Outro</option>
+                <option>Prefiro não informar</option>
+              </select>
+            </div>
+
+            <div class="input-container">
+              <label>Endereço:</label>
+              <input class="input-text" type="text" placeholder="Rua, número, bairro" required />
+            </div>
+
+            <div class="input-container">
+              <label>Senha:</label>
+              <input class="input-text" type="password" placeholder="Crie uma senha" required />
+            </div>
+
+            <div class="input-container">
+              <label>Confirmação de senha:</label>
+              <input class="input-text" type="password" placeholder="Confirme a senha" required />
+            </div>
+           <div id="checbox-container">
+              <input type="checkbox" required />
+              <label id="remeber-label">
+                Concordo com os termos e políticas
+              </label>
+            </div>
+            <button id="btn-singin" type="submit">
+              Cadastrar
+            </button>
+          </form>
+        </main>
+
+        <footer id="footer">
+          <p>
+            Já possui conta?
+            <a id="singup" href="../login/index.html">Entrar</a>
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
+
+

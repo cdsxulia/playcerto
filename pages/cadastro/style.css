@@ -1,0 +1,173 @@
+/* RESET E FONTE */
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Caudex", serif;
+}
+
+/* BODY */
+body {
+      background-image: url(../../assets/fundobody.png);
+      background-color: lightgrey;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+}
+
+/* CONTAINER PRINCIPAL */
+#container {
+     min-width: 300px;
+    width: 40vw;
+      background-color: rgb(255, 248, 248);
+      border-radius: 12px;
+      padding: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+/* CAIXA CENTRAL */
+#left-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 24px;
+}
+
+/* HEADER */
+#header-container {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #393f46;
+}
+
+#title-hed {
+      font-size: 20px;
+      visibility: hidden;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+      width: 100%;
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* TÍTULOS */
+#subtitle-page {
+      margin-bottom: 2rem;
+}
+
+#welcome-text {
+      margin-bottom: 0.5rem;
+      font-size: 24px;
+      font-weight: 700;
+}
+
+#subtitle-page p {
+      color: rgb(150, 149, 149);
+      font-size: 14px;
+}
+
+/* FORMULÁRIO */
+form {
+      width: 100%;
+}
+
+/* INPUTS */
+.input-container {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+}
+
+.input-container label {
+      font-size: 14px;
+      margin-bottom: 0.25rem;
+}
+
+.input-text {
+      height: 2.5rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      padding: 0 10px;
+      font-size: 14px;
+}
+
+.input-text:focus {
+      outline: none;
+      border-color: rgb(149, 60, 193);
+}
+
+/* SELECT */
+select.input-text {
+      background-color: white;
+      cursor: pointer;
+}
+
+/* CHECKBOX */
+#checbox-container {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 0.5rem;
+}
+
+#remeber-label {
+      font-size: 13px;
+      color: rgb(150, 149, 149);
+}
+
+/* BOTÃO */
+#btn-singin {
+      margin-top: 2rem;
+      width: 100%;
+      height: 48px;
+      border-radius: 8px;
+      border: none;
+      background-color: rgb(149, 60, 193);
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+}
+
+#btn-singin:hover {
+      opacity: 0.9;
+}
+
+/* FOOTER */
+#footer {
+      text-align: center;
+      font-size: 14px;
+      color: rgb(150, 149, 149);
+}
+
+#singup {
+      color: rgb(18, 42, 252);
+      text-decoration: none;
+      font-weight: 700;
+      margin-left: 4px;
+}
+
+#singup:hover {
+      text-decoration: underline;
+}
+
+/* RESPONSIVO */
+@media (max-width: 480px) {
+      #container {
+            padding: 24px;
+      }
+
+      #welcome-text {
+            font-size: 22px;
+      }
+}
